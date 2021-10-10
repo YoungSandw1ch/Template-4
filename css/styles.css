@@ -18,6 +18,8 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit;font-weight: 400;}
 
 body{
     font-family: Montserrat;
+    font-size: 16px;
+    color: #000000;
 }
 .container {
     width: 1150px;
@@ -38,7 +40,6 @@ body{
 .header__menu {
     padding: 40px 0px 0px 50%;
     font-weight: 500;
-    font-size: 16px;
     line-height: 20px;
     border-bottom: 1px solid rgba(161, 161, 161, 0.5);
 }
@@ -75,7 +76,6 @@ body{
 }
 .fullscreen__title {
     font-weight: 500;
-    font-size: 16px;
     line-height: 20px;
 }
 .fullscreen__subtitle {
@@ -89,24 +89,82 @@ body{
     
 }
 .link{
-    font-size: 16px;
     line-height: 20px;
     font-weight: 500;
-    padding: 13px 36px;
+    padding: 13px 0;
     background: #4985FF;
     box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
     border-radius: 30px;
     border: 2px solid #4985FF;
+    color: #FFFFFF;
+    min-width: 200px;
 }
-.fullscreen__link:hover{
+.link:hover{
     color:#4985FF;
     background: #FFffff;
 
 }
-.fullscreen__link {
-    color: #FFFFFF;
-}
+
+/* ----------------------------------------main------------------------------------- */
 .main {
 }
+.title{
+    font-size: 36px;
+    line-height: 53px;
+    color: #323232;
+    font-weight: 700;
+}
+/* --------------------------------------servises----------------------------------- */
+.servises {
+    margin: 110px 0px 105px 0px;
+    text-align: center;
+}
+.servises__title {
+    max-width: 739px;
+    margin: 0 auto 50px;
+}
+.servises__subtitle {
+    line-height: 25px;
+    color: #999999;
+    margin: 0 auto 70px;
+    max-width: 730px;
+}
+.servises__row {
+    display: flex;
+    margin-bottom: 55px;
+}
+.servises__item {
+    flex: 0 0 calc((1120px - 54px)/3);
+    display: flex;
+}
+.servises__item:not(:last-child){
+    margin-right: 27px;
+}
+.servises__img {
+    min-width: 110px;
+    min-height: 110px;
+    background: url(/img/icon/Ellipse-1.svg) 0 0 no-repeat,url(/img/icon/Ellipse-2.svg) 10px 10px no-repeat,url(/img/icon/project.svg) 35px 35px no-repeat;
+}
+.servises__body {
+    padding: 10px;
+}
+.servises__body p:first-child{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+    padding-top: 49px;
+    margin-bottom: 12px;
+}
+.servises__body p:last-child{
+    font-size: 14px;
+    line-height: 22px;
+    color: #999999;
+}
+.servises__link{
+    display: inline-block;
+}
+
+
+
 .footer {
 }
